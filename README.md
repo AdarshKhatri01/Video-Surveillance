@@ -18,7 +18,7 @@ A real-time AI-based video surveillance system that detects crime activities suc
 
 ![Detection Result - Dark Themed](screenshots/dark_themed.png)
 
-![Detection Result - Light Themed](screenshots/lght_themed.png)
+![Detection Result - Light Themed](screenshots/light_themed.png)
 
 ---
 
