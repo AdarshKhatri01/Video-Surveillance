@@ -1,0 +1,193 @@
+/* GENERAL STYLING */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+    color: #e0e0e0;
+}
+
+/* MONITOR CONTAINER */
+.monitor {
+    border-radius: 20px;
+    border: 10px solid #2c2c2c;
+    background-color: #000000;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+/* STATUS BAR */
+.status-bar {
+    display: flex;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.status-light {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.green {
+    background-color: #00ff00;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.orange {
+    background-color: #ffa500;
+}
+
+#status-text {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* MAIN CONTAINER */
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+/* LEFT PANEL - Upload Form */
+.left-panel {
+    flex: 1;
+    background: linear-gradient(145deg, #232526, #414345);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.left-panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Input and Form Styling */
+input[type="file"] {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #e84118;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff4757;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #e84118;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 71, 87, 0.5);
+}
+
+/* Prediction Status */
+#status {
+    color: #a8a8a8;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+#prediction {
+    font-size: 18px;
+    color: #00ffaa;
+    font-weight: bold;
+}
+
+/* Status Light Glow */
+.status-light {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.8);
+}
+
+.red {
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+}
+
+.orange {
+    box-shadow: 0 0 8px rgba(255, 165, 0, 0.8);
+}
+
+/* RIGHT PANEL - CCTV VIDEO PLAYER */
+.right-panel {
+    flex: 2;
+}
+
+.cctv-frame {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.cctv-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 14px;
+}

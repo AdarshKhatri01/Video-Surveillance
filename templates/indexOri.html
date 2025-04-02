@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style3.css" />
+    <title>CCTV Crime Detection</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <h1>CCTV Crime Detection</h1>
+            <p>Upload your CCTV footage to predict if it contains any violent activity.</p>
+
+            <input type="file" id="fileInput" accept="video/*" hidden />
+            <label for="fileInput">Choose File</label>
+            <button id="predictBtn">Upload and Predict</button>
+
+            <p id="status">Awaiting file upload...</p>
+            <div id="prediction" class=""></div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <video id="videoPlayer" controls>
+                <source id="videoSource" type="video/mp4" />
+                <!-- <source id="videoSource" type="video/avi" /> -->
+                Your browser does not support video playback.
+            </video>
+        </div>
+    </div>
+
+    <script src="/static/video_player.js"></script>
+</body>
+
+</html>

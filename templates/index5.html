@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style5.css" />
+    <title>CCTV Crime Detection</title>
+</head>
+
+<body data-theme="dark">
+    <div class="toggle-container">
+        <label class="toggle-label">
+            <img src="/static/moon.svg" class="toggle-icon" id="themeIcon" />
+            <span id="themeText">Dark Mode</span>
+            <input type="checkbox" id="themeToggle" hidden />
+        </label>
+    </div>
+
+    <div class="container">
+        <!-- Left Panel for Upload and Prediction -->
+        <div class="left-panel">
+            <h1>CCTV Crime Detection</h1>
+            <p>Upload a video to predict if it contains any violent activity.</p>
+
+            <input type="file" id="fileInput" accept="video/*" hidden />
+            <label for="fileInput">Choose File</label>
+            <button id="predictBtn">Upload and Predict</button>
+
+            <p id="status">Awaiting file upload...</p>
+            <p id="prediction" class=""></p>
+        </div>
+
+        <!-- Right Panel for Video Playback -->
+        <div class="right-panel">
+            <video id="videoPlayer" controls>
+                <source id="videoSource" type="video/mp4" />
+                Your browser does not support video playback.
+            </video>
+        </div>
+    </div>
+
+    <script src="/static/video_player.js"></script>
+</body>
+
+</html>
